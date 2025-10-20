@@ -39,22 +39,72 @@
         </div>
     </section>
 
-    <div class="modal" id="exampleModal" tabindex="-1">
-        <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title">了解</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-            <h1>更多。</h1>
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-        </div>
-        </div>
+    
+<!-- Modal：比特幣 -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1Label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModal1Label">比特幣</h5>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png" alt="比特幣" width="100" class="ms-3">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body"><h3>
+        比特幣是一種去中心化的加密貨幣，不依賴任何中央銀行或單一機構發行和管理。
+        其運作建立在區塊鏈技術上，透過密碼學保護，確保交易安全透明。</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+      </div>
     </div>
+  </div>
+</div>
+
+<!-- Modal：以太幣 -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModal2Label">以太幣</h5>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Ethereum-icon-purple.svg/250px-Ethereum-icon-purple.svg.png" alt="以太幣" width="100" class="ms-3">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body"><h3>
+        以太幣（ETH）是以太坊（Ethereum）區塊鏈上的原生加密貨幣。
+        它不僅是市值第二大的加密貨幣，更是在以太坊這個去中心化平台上運行的核心資產。
+        ETH 被用於支付網絡交易費用、運行智能合約，以及作為許多去中心化應用程式（dApp）和去中心化金融（DeFi）的燃料。</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Cardano -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModal3Label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModal3Label">Cardano（ADA）</h5>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAzFWkuqQ4_NTIsM1FwoTPNUW4NKSEUqgNd-YKXgE5QGHnfI6xaNxgFC6He3bhHvW8Q04&usqp=CAU" alt="Cardano" width="100" class="ms-3">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body"><h3>
+        Cardano（ADA）是一個第三代區塊鏈平台，由以太坊共同創辦人 Charles Hoskinson 所建立。
+        它採用分層架構與權益證明（Proof of Stake, PoS）共識機制，
+        旨在提供更高的安全性、可擴展性與永續性。
+        ADA 是該平台的原生代幣，用於交易、質押與治理投票。
+      </h3></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
 
     <!-- 三欄內容區 -->
     <section class="container my-5">
@@ -62,12 +112,12 @@
         <div class="col-md-4 mb-4">
         <div class="card h-100 shadow-sm">
             <div class="card-body">
-            <h5 class="card-title">特色一</h5>
-            <p class="card-text">Bootstrap 提供了簡單好用的響應式網格系統。</p>
-            <p class="text-muted small">透過 col 與 row 結構，你可以輕鬆建立彈性排版，不論在手機或桌機上都能完美呈現。</p>
-            <button type="button" class="btn btn-primary btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            了解更多
-        </button>
+            <h5 class="card-title">圖片一</h5>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png" alt="比特幣" width="100">
+            <p class="text-muted small"><h2>比特幣</h2></p>
+           <button type="button" class="btn btn-primary btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+            查看更多
+             </button>
             </div>
         </div>
         </div>
@@ -75,9 +125,12 @@
         <div class="col-md-4 mb-4">
         <div class="card h-100 shadow-sm">
             <div class="card-body">
-            <h5 class="card-title">特色二</h5>
-            <p class="card-text">使用預設的排版與按鈕樣式即可快速開發。</p>
-            <p class="text-muted small">Bootstrap 提供大量內建元件，例如按鈕、表單、導覽列，讓開發者節省時間。</p>
+            <h5 class="card-title">圖片二</h5>
+            <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Ethereum-icon-purple.svg/250px-Ethereum-icon-purple.svg.png alt="乙太幣" width="100">
+            <h2><p class="text-muted small">乙太幣</p></h2>
+            <button type="button" class="btn btn-primary btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            查看更多
+             </button>
             </div>
         </div>
         </div>
@@ -85,93 +138,21 @@
         <div class="col-md-4 mb-4">
         <div class="card h-100 shadow-sm">
             <div class="card-body">
-            <h5 class="card-title">特色三</h5>
-            <p class="card-text">自動適應手機、平板與桌面裝置。</p>
-            <p class="text-muted small">只要設定適當的 col-breakpoint（如 col-md-4），就能讓版面在不同裝置下自動調整。</p>
+            <h5 class="card-title">圖片三</h5>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAzFWkuqQ4_NTIsM1FwoTPNUW4NKSEUqgNd-YKXgE5QGHnfI6xaNxgFC6He3bhHvW8Q04&usqp=CAU" width="100">
+            <h2><p class="text-muted small">Cardano</p></h2>
+             <button type="button" class="btn btn-primary btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+            查看更多
+             </button>
             </div>
         </div>
         </div>
-
-        <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm">
-            <div class="card-body">
-            <h5 class="card-title">練習檔案</h5>
-            <a href="/RWD/example.html" class="btn btn-outline-primary btn-sm mt-2">練習檔案</a>
-            </div>
-        </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm">
-            <div class="card-body">
-            <h5 class="card-title">導覽列 Navbar</h5>
-            <a href="/RWD/navbar.html" class="btn btn-outline-primary btn-sm mt-2">Navbar</a>
-            </div>
-        </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm">
-            <div class="card-body">
-            <h5 class="card-title">主視覺區塊</h5>
-            <a href="/RWD/mainContainer.html" class="btn btn-outline-primary btn-sm mt-2">主視覺區塊</a>
-            </div>
-        </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm">
-            <div class="card-body">
-            <h5 class="card-title">內容區</h5>
-            <a href="/RWD/container.html" class="btn btn-outline-primary btn-sm mt-2">內容區</a>
-            </div>
-        </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm">
-            <div class="card-body">
-                <h5 class="card-title">Modal 圖片/網址路徑</h5>
-                本機：圖片.jpg<br>
-                Github：/RWD/圖片.jpg <br>
-                [RWD 改成 自己的儲存空間名稱]<br>
-                <button type="button" class="btn btn-primary btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#Modalimg">
-                了解更多
-                </button>
-            </div>
-        </div>
-        </div>
-
-        <div class="modal" id="Modalimg" tabindex="-1">
-        <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title">Modal IMG</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6"><img src="/RWD/jiao.jpg" width="200"></div>
-                        <div class="col-6">文字</div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-        </div>
-        </div>
-    </div>
-    </div>
-    </section>
 
 
     <!-- 頁尾 -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p class="mb-0">© 2025 我的網站. All rights reserved.</p>
+    <footer class="bg-dark text-white text-center py-3 fixed-bottom">
+     <p class="mb-0">© 2025 我的網站. All rights reserved.</p>
     </footer>
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
