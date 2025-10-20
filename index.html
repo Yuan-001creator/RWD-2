@@ -65,6 +65,9 @@
             <h5 class="card-title">特色一</h5>
             <p class="card-text">Bootstrap 提供了簡單好用的響應式網格系統。</p>
             <p class="text-muted small">透過 col 與 row 結構，你可以輕鬆建立彈性排版，不論在手機或桌機上都能完美呈現。</p>
+            <button type="button" class="btn btn-primary btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            了解更多
+        </button>
             </div>
         </div>
         </div>
@@ -124,6 +127,42 @@
             </div>
         </div>
         </div>
+
+        <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Modal 圖片/網址路徑</h5>
+                本機：圖片.jpg<br>
+                Github：/RWD/圖片.jpg <br>
+                [RWD 改成 自己的儲存空間名稱]<br>
+                <button type="button" class="btn btn-primary btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#Modalimg">
+                了解更多
+                </button>
+            </div>
+        </div>
+        </div>
+
+        <div class="modal" id="Modalimg" tabindex="-1">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title">Modal IMG</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6"><img src="/RWD/jiao.jpg" width="200"></div>
+                        <div class="col-6">文字</div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+        </div>
+    </div>
     </div>
     </section>
 
